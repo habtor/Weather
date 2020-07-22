@@ -1,0 +1,554 @@
+body {
+    background: #F4F5FB;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5A5A5A;
+}
+
+
+.container {
+    position: relative;
+    margin: 80px auto;
+    width: 450px;
+    padding-bottom: 30px;
+    /* height: 700px; */
+    border-radius: 20px;
+    background: #f0f1fa;
+    box-shadow: 10px 10px 30px #cad9e9,
+        -10px -10px 10px #ffffff;
+    overflow: hidden;
+}
+
+
+/* ================================== Sun ============================ */
+
+
+
+/* .sun {
+    position: absolute;
+    background-color: #FFD600;
+    width: 100%;
+    height: 100%;
+    top: -250px;
+    left: 150px;
+    clip-path: circle(86px);
+    overflow: hidden;
+    z-index: 10;
+    opacity: 0.9;
+}
+
+.inner_sun_shine {
+    position: absolute;
+    background-color: #ffd50067;
+    width: 100%;
+    height: 100%;
+    top: -250px;
+    left: 150px;
+    clip-path: circle(90px);
+    overflow: hidden;
+    z-index: 10;
+    opacity: 0.99;
+}
+
+.sun_shin {
+    position: absolute;
+    background-color: rgb(255, 238, 0);
+    width: 100%;
+    height: 100%;
+    top: -250px;
+    left: 150px;
+    clip-path: circle(150px);
+    overflow: hidden;
+    opacity: 0.15;
+} */
+
+
+/* ============================= Country & degree Data ============================ */
+.now_time {
+    font-size: 13px;
+    text-align: center;
+}
+
+.country {
+    padding: 0px 0 0 25px;
+    font-weight: 500;
+    font-size: 40px;
+    z-index: 1000;
+}
+
+.country_code {
+    padding: 0px 0 0 30px;
+    margin-top: -15px;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+img {
+    position: absolute;
+    width: 220px;
+    top: 150px;
+    left: 210px;
+    opacity: 0.9;
+}
+
+.degry {
+    padding-left: 30px;
+    font-weight: 500;
+    font-size: 80px;
+    margin-top: 40px;
+}
+
+.description {
+    margin-top: -50px;
+    padding-left: 30px;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+/* ======================== Sub & Humidity Data ================= */
+
+.dataa {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 10px;
+    margin: 35px auto 5px auto;
+    padding: 30px 10px 20px 10px;
+    /* box-shadow: 3px 3px 5px #d6d6d6,
+        -3px -3px 5px #ffffff; */
+}
+
+.sub_data {
+    display: flex;
+
+    width: 400px;
+    height: 70px;
+    justify-content: space-between;
+    text-align: left;
+}
+
+
+.sub_data2 {
+    display: flex;
+    margin: 15px auto 0px auto;
+    width: 400px;
+    height: 70px;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.sub_data3 {
+    display: flex;
+    margin: 15px auto 0px auto;
+    width: 400px;
+    height: 70px;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.data_title {
+    font-size: 13px;
+    padding-left: 13px;
+}
+
+.data {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.maxx {
+    width: 192px;
+    display: flex;
+    border-radius: 8px;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 3px 3px 5px #d6d6d6,
+        -3px -3px 5px #ffffff;
+}
+
+.icons {
+    position: absolute;
+    width: 40px;
+    left: 138px;
+    top: 22px;
+}
+
+
+
+/* ======================================== Small Screens ====================== */
+@media (max-width: 466px) {
+
+    .container {
+        position: relative;
+        margin: 80px auto;
+        width: 290px;
+        padding-bottom: 30px;
+        /* height: 700px; */
+        border-radius: 20px;
+        background: #f0f1fa;
+        box-shadow: 10px 10px 30px #cad9e9,
+            -10px -10px 10px #ffffff;
+        overflow: hidden;
+    }
+
+    /*==================== Upper part ===================== */
+    .now_time {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .country {
+        padding: 0px 0 0 0px;
+        font-weight: 500;
+        font-size: 20px;
+        z-index: 1000;
+        text-align: center;
+    }
+
+    .country_code {
+        padding: 0px 0 0 27px;
+        margin-top: 0px;
+        font-weight: 500;
+        font-size: 15px;
+
+    }
+
+    img {
+        position: absolute;
+        width: 150px;
+        top: 80px;
+        left: 120px;
+        opacity: 0.9;
+    }
+
+    .degry {
+        padding-left: 30px;
+        font-weight: 500;
+        font-size: 40px;
+        margin-top: 40px;
+    }
+
+    .description {
+        margin-top: 2px;
+        
+        font-weight: 500;
+        font-size: 15px;
+        text-align: left;
+
+    }
+
+    /*==================== lower (Data) part ===================== */
+
+    .dataa {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        border-radius: 10px;
+        margin: 0px auto 5px auto;
+        /* padding: 30px 10px 20px 10px; */
+        /* box-shadow: 3px 3px 5px #d6d6d6,
+            -3px -3px 5px #ffffff; */
+    }
+
+    .sub_data {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        width: 200px;
+        height: 150px;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+
+    .sub_data2 {
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto 0px auto;
+        width: 200px;
+        height: 150px;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .sub_data3 {
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto 0px auto;
+        width: 200px;
+        height: 150px;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .data_title {
+        font-size: 13px;
+        padding-left: 13px;
+    }
+
+    .data {
+        position: absolute;
+        left: 15px;
+        top: 20px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .maxx {
+        height: 150px;
+        margin-top: 10px;
+        display: flex;
+        border-radius: 8px;
+        flex-direction: column;
+        position: relative;
+        box-shadow: 3px 3px 5px #d6d6d6,
+            -3px -3px 5px #ffffff;
+    }
+
+    .icons {
+        position: absolute;
+        width: 40px;
+        left: 138px;
+        top: 16px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================== Days Buttons =========================================== */
+
+/* .maxx::before {
+    content: url(https://image.flaticon.com/icons/svg/3226/3226465.svg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+} */
+
+/* ======================= Days Data ================= */
+
+/*.day_grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "1 2 3";
+    background-color: coral; 
+    justify-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 30px auto 0 auto;
+    grid-row-gap: 15px;
+
+
+}
+
+ .day_grid .days {
+    background-color: cornflowerblue;
+    position: relative;
+    width: 100px;
+    height: 140px;
+    border-radius: 10px;
+    padding: 0 0 0 10px;
+    background: #f0f1fa;
+    box-shadow: 3px 3px 5px #d6d6d6,
+        -3px -3px 5px #ffffff;
+    cursor: pointer;
+}
+
+.day_grid .days1 {
+    background-color: cornflowerblue;
+    position: relative;
+    width: 100px;
+    border-radius: 10px;
+    padding: 0 0 0 10px;
+    background: #f0f1fa;
+
+    cursor: pointer;
+}
+
+.day_grid .days p {
+    font-size: 13.5px;
+    font-weight: lighter;
+    font-weight: 600;
+    color: rgb(145, 145, 145);
+
+}
+
+.day_grid .days .day_degree {
+    padding-left: 6px;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(68, 68, 68);
+    margin-bottom: 0px;
+}
+
+.day_grid .days1 p {
+    font-size: 13.5px;
+    font-weight: lighter;
+    font-weight: 600;
+    color: rgb(145, 145, 145);
+
+}
+
+.day_grid .days1 .day_degree {
+    padding-left: 6px;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(68, 68, 68);
+    margin-bottom: 0px;
+} */
+
+/* ======================= Cloud ============================= */
+.day_grid .neu_btn_container::after {
+    content: '';
+    position: absolute;
+    background-color: #328ffa;
+    width: 30px;
+    height: 12px;
+    top: 105px;
+    left: 64px;
+    border-radius: 50px;
+    /* clip-path: circle(15px); */
+    overflow: hidden;
+    z-index: 10;
+    opacity: 1;
+}
+
+.day_grid .neu_btn_container::before {
+    content: '';
+    position: absolute;
+    background-color: #328ffa;
+    width: 100%;
+    height: 100%;
+    top: 34px;
+    left: 20px;
+    clip-path: circle(9px);
+    overflow: hidden;
+    z-index: 10;
+    opacity: 1;
+}
+
+/* =================== Sun ====================== */
+.day_grid .neu_btn_container1::after {
+    content: '';
+    position: absolute;
+    background-color: #ffd500;
+    width: 100%;
+    height: 100%;
+    top: 40px;
+    left: 25px;
+    clip-path: circle(12px);
+    overflow: hidden;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+/* ============================================================================== */
+
+
+
+/* ============= Hide Radio Buttons ==============*/
+/* .state {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.label {
+    cursor: pointer;
+
+}
+
+
+
+.indicator {
+    position: relative;
+    width: 110px;
+    height: 140px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #d6d6d6,
+        -3px -3px 5px #ffffff;
+    overflow: hidden;
+}
+
+
+
+
+.state:checked~.label .indicator {
+
+    box-shadow: inset 3px 3px 5px #d1d7d8,
+        inset -3px -3px 5px #ffffff;
+} */
+
+
+/* ========================================================== */
+
+.radio_form input[type=radio].neu_btn {
+    -webkit-appearance: none;
+    width: 110px;
+    height: 140px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #d6d6d6,
+        -3px -3px 5px #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.radio_form input[type=radio].neu_btn:checked {
+    box-shadow: inset 3px 3px 5px #d6d6d6,
+        inset -3px -3px 5px #ffffff;
+}
+
+.neu_btn_container {
+    position: relative;
+}
+
+.neu_btn_container label {
+    position: absolute;
+    left: 15px;
+}
+
+.neu_btn_container label .day_degree {
+
+    padding-left: 10px;
+}
+
+/* =============== the Sun ====================== */
+.neu_btn_container1 {
+    position: relative;
+}
+
+.neu_btn_container1 label {
+    position: absolute;
+    left: 15px;
+}
+
+.neu_btn_container1 label .day_degree {
+
+    padding-left: 10px;
+}
+
+.day {
+    padding-top: 9px;
+}
